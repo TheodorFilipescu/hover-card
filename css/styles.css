@@ -1,0 +1,190 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #111;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #d010e9;
+}
+
+::selection {
+  color: #fff;
+  background: #d010e9;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+  background: #fffeff;        /* color of the tracking area */
+  
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color: #d010e9;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #b00fc5;  /* creates padding around scroll thumb */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+  background-color: #dd27f5;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #b00fc5;  /* creates padding around scroll thumb */
+  }
+
+/***************/
+
+/* font-family: 'Staatliches', cursive; */
+
+/***************/
+
+.container-cards-total {
+  height: 620px;
+/*   background-color: red; */
+  margin-top: 250px;
+}
+
+.container-cards {
+  height: 100%;
+  max-width: 1550px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-cards-elements {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.container-cards-el-1 {
+  height: 500px;
+  width: 400px;
+  background-color: #D14D72;
+  border: 2px solid #D14D72;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.container-cards-el-2 {
+  height: 0px;
+  width: 400px;
+  background-color: #FFABAB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  margin-top: -20px;
+  z-index: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid #D14D72;
+}
+
+.cards-jos-hover {
+  animation-name: cards-jos-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cards-jos-hover {
+  0% {
+    opacity: 1;
+    height: 0;
+    padding-top: 0px;
+  }
+  100% {
+    opacity: 1;
+    height: 100px;
+    padding-top: 20px;
+  }
+}
+
+.cards-jos-unhover {
+  animation-name: cards-jos-unhover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cards-jos-unhover {
+  0% {
+    opacity: 1;
+    height: 100px;
+    padding-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    height: 0;
+    padding-top: 0px;
+  }
+}
+
+.container-cards-el-2-fa-asp {
+  text-decoration: none;
+  color: #FCC8D1;
+  font-size: 30px;
+}
+
+.container-cards-el-2-fa-asp:hover {
+  color: #D14D72;
+  transition: 0.3s;
+}
+
+.container-cards-el-1-img-div {
+  height: 300px;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: yellow;
+  background-image: linear-gradient(to bottom, #ffffff00 0%, #D14D72 100%), url('../images/dreypraydev.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-cards-el-1-h2-asp {
+  width: 100%;
+/*   padding-left: 10px;
+  padding-right: 10px; */
+  color: #FEF2F4;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.container-cards-el-1-p-asp1 {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FEF2F4;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.container-cards-el-1-p-asp2 {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FEF2F4;
+  margin-top: 0;
+  font-size: 22px;
+}
